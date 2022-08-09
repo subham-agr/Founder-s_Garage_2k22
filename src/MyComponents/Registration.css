@@ -4,8 +4,8 @@ h2{
 }
 
 .containers{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -26,7 +26,7 @@ input::-webkit-outer-spin-button,
 
         .container-form{
             padding: 2rem;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             border-radius: 2rem;
             margin: 20px;
             box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
@@ -53,6 +53,30 @@ input::-webkit-outer-spin-button,
 /* .team-details{
     display: none;
 } */
-    /* .team-div{
-        display: inline-block;
-    } */
+    #team-div{
+        display: none;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    .image{
+        width: 8.5vw;
+        height: 8.5vw;
+    }
+
+    .images{
+        width: 8.5vw;
+        height: 5vw;
+    }
+
+    .ITClogo{
+        text-align: end;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Registration.css'
+import EnB_logo from './EnB_logo1.png'
+import ITC_logo from './ITClogoWhite.png'
 
 
 export default function Registration() {
@@ -8,16 +10,26 @@ export default function Registration() {
 
   const Next = () => {
     setDisabled(false);
+    let container=document.getElementById("team-div");
+    console.log(container)
+    container.style.display = "contents";
   }
 
   const Submit = () => {
     setDisabled(true);
+    let container=document.getElementById("team-div");
+    console.log(container)
+    container.style.display = "none";
   }
 
   return (
       <div className="containers">
         <div className="container-form">
-            <h2>Founder's Garage Registration</h2>
+            <div className='header'>
+              <div className="col-md-3"><img src={EnB_logo} className="image" alt="check your internet" /></div>
+              <div className="col-md-6"><h2>Founder's Garage Registration</h2></div>
+              <div className="col-md-3 ITClogo"><img src={ITC_logo} className="images" alt="check your internet" /></div>
+            </div>
             <form action='https://script.google.com/macros/s/AKfycbzfasDxP60vobW6_HWahCrfZbW_Qns-ayHliac3JCPKuWYQzUyjr6YdkXvW4Uvik_HY/exec' className="row g-3">
                 <div className="col-md-6">
                   <label for="inputemail4" className="form-label">Email ID*</label>
@@ -69,38 +81,38 @@ export default function Registration() {
                     </label>
                   </div>
                 </div>
-                <h2 className='team-details' id="POKEMON">Team Details</h2>
-                <div className="col-md-12">
-                  <label for="inputtext4" className="form-label team-details">Team Name*</label>
-                  <input type="text" className="form-control" id="inputtext4" name='Team Name' disabled={isDisabled} required/>
-                </div>
-                <div className="col-md-6">
-                  <label for="inputtext4" className="form-label team-details">Member 2*</label>
-                  <input type="text" className="form-control" id="inputtext4" name='Member-2' disabled={isDisabled} required/>
-                </div>
-                <div className="col-md-6">
-                  <label for="inputEmail4" className="form-label team-details">Member 2 Ldap*</label>
-                  <input type="email" className="form-control" id="inputEmail4" name='Member-2 Ldap' disabled={isDisabled} required/>
-                </div>
-                {/* <div className="col-md-6">
-                  <label for="inputNumber4" className="form-label">Whatsapp No (PoC)*</label>
-                  <input type="number" className="form-control" id="inputNumber4" required/>
-                </div> */}
-                <div className="col-md-6">
+                <div className="col-md-12" id='team-div'>
+                  <div className="col-md-12 heading">
+                    <h2 className='team-details'>Team Details</h2>
+                  </div>
+                  <div className="col-md-12 p-2">
+                    <label for="inputtext4" className="form-label team-details">Team Name*</label>
+                    <input type="text" className="form-control" id="inputtext4" name='Team Name' disabled={isDisabled} required/>
+                  </div>
+                  <div className="col-md-6 p-2">
+                    <label for="inputtext4" className="form-label team-details">Member 2*</label>
+                    <input type="text" className="form-control" id="inputtext4" name='Member-2' disabled={isDisabled} required/>
+                  </div>
+                  <div className="col-md-6 p-2">
+                    <label for="inputEmail4" className="form-label team-details">Member 2 Ldap*</label>
+                    <input type="email" className="form-control" id="inputEmail4" name='Member-2 Ldap' disabled={isDisabled} required/>
+                  </div>
+                  <div className="col-md-6 p-2">
                     <label for="inputtext4" className="form-label team-details">Member 3*</label>
                     <input type="text" className="form-control" id="inputtext4" name='Member-3' disabled={isDisabled} required/>
-                </div>
-                <div className="col-md-6">
+                  </div>
+                  <div className="col-md-6 p-2">
                     <label for="inputEmail4" className="form-label team-details">Member 3 Ldap*</label>
                     <input type="email" className="form-control" id="inputEmail4" name='Member-3 Ldap' disabled={isDisabled} required/>
-                </div>
-                <div className="col-md-6">
+                  </div>
+                  <div className="col-md-6 p-2">
                     <label for="inputtext4" className="form-label team-details">Member 4*</label>
                     <input type="text" className="form-control" id="inputtext4" name='Member-4' disabled={isDisabled} required/>
-                </div>
-                <div className="col-md-6">
+                  </div>
+                  <div className="col-md-6 p-2">
                     <label for="inputEmail4" className="form-label team-details">Member 4 Ldap*</label>
                     <input type="email" className="form-control" id="inputEmail4" name='Member-4 Ldap' disabled={isDisabled} required/>
+                  </div>
                 </div>
                 <div className="col-md-4"></div>
                 <div className="col-md-4 submit">
