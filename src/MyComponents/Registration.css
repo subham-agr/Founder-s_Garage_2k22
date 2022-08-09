@@ -1,0 +1,58 @@
+h2{
+    color: white;
+    text-align: center;
+}
+
+.containers{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: gold; */
+        }
+
+        .container-form{
+            padding: 2rem;
+            border: 2px solid red;
+            border-radius: 2rem;
+            margin: 20px;
+            box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+            background-color: rgb(14 0 35);
+        }
+
+        label{
+            color: white;
+        }
+
+        .submit{
+            text-align: center;
+        }
+
+        #submit{
+            border: 2px solid white;
+        }
+
+        #submit:hover{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+/* .team-details{
+    display: none;
+} */
+    /* .team-div{
+        display: inline-block;
+    } */
