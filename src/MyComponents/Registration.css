@@ -4,10 +4,10 @@ h2{
 }
 
 .containers{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 input::-webkit-outer-spin-button,
@@ -59,16 +59,19 @@ input::-webkit-outer-spin-button,
 
     .heading{
         text-align: center;
+        color: white;
     }
 
     .image{
-        width: 8.5vw;
-        height: 8.5vw;
+        width: 12vw;
+        height: 12vw;
+        margin-right: 1vw;
     }
 
     .images{
-        width: 8.5vw;
-        height: 5vw;
+        width: 10vw;
+        height: 6vw;
+        margin-left: 1vw;
     }
 
     .ITClogo{
@@ -79,4 +82,9 @@ input::-webkit-outer-spin-button,
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    h2{
+        font-size: 2.5vw;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }

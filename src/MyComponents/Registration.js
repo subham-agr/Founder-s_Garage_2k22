@@ -87,31 +87,31 @@ export default function Registration() {
                   </div>
                   <div className="col-md-12 p-2">
                     <label for="inputtext4" className="form-label team-details">Team Name*</label>
-                    <input type="text" className="form-control" id="inputtext4" name='Team Name' disabled={isDisabled} required/>
+                    <input type="text" className="form-control team-details" id="inputtext4" name='Team Name' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputtext4" className="form-label team-details">Member 2*</label>
-                    <input type="text" className="form-control" id="inputtext4" name='Member-2' disabled={isDisabled} required/>
+                    <input type="text" className="form-control team-details" id="inputtext4" name='Member-2' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputEmail4" className="form-label team-details">Member 2 Ldap*</label>
-                    <input type="email" className="form-control" id="inputEmail4" name='Member-2 Ldap' disabled={isDisabled} required/>
+                    <input type="email" className="form-control team-details" id="inputEmail4" name='Member-2 Ldap' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputtext4" className="form-label team-details">Member 3*</label>
-                    <input type="text" className="form-control" id="inputtext4" name='Member-3' disabled={isDisabled} required/>
+                    <input type="text" className="form-control team-details" id="inputtext4" name='Member-3' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputEmail4" className="form-label team-details">Member 3 Ldap*</label>
-                    <input type="email" className="form-control" id="inputEmail4" name='Member-3 Ldap' disabled={isDisabled} required/>
+                    <input type="email" className="form-control team-details" id="inputEmail4" name='Member-3 Ldap' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputtext4" className="form-label team-details">Member 4*</label>
-                    <input type="text" className="form-control" id="inputtext4" name='Member-4' disabled={isDisabled} required/>
+                    <input type="text" className="form-control team-details" id="inputtext4" name='Member-4' disabled={isDisabled} required/>
                   </div>
                   <div className="col-md-6 p-2">
                     <label for="inputEmail4" className="form-label team-details">Member 4 Ldap*</label>
-                    <input type="email" className="form-control" id="inputEmail4" name='Member-4 Ldap' disabled={isDisabled} required/>
+                    <input type="email" className="form-control team-details" id="inputEmail4" name='Member-4 Ldap' disabled={isDisabled} required/>
                   </div>
                 </div>
                 <div className="col-md-4"></div>
